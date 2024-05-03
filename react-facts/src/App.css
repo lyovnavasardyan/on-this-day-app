@@ -1,0 +1,44 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Caveat", cursive
+}
+
+select{
+  border-radius: 6px;
+  background-color: #37b405e4;
+  color: white;
+  border:none
+}
+
+.sections-style{
+  display: flex;
+  flex-direction: column;
+}
+
+.search-button{
+  margin-bottom: 11px;
+  margin-left:70px;
+  margin-top: 7px;
+  background-color: #37b405e4;
+  color:white;
+  border-radius: 8px;
+  height: 40px;
+  width:130px;
+  border: none;
+  cursor: pointer;
+  box-shadow:10px 2px 10px rgba(93, 85, 174, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Caveat", cursive
+}
+
+.search-button:hover{
+  background-color: #226e23;
+}
+
+.gif-style{
+  margin-left: 40px;
+}
