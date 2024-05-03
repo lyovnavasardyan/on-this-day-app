@@ -10,7 +10,6 @@ function App() {
    <div style = {{"width":"330px"}}>
     <Header/>
     <NumberSelect/>
-    <MyComponent/>
    </div>
   )
 }
@@ -130,31 +129,7 @@ function FetchEvent({selectedDay,selectedMonth}) {
   );
 }
 
-const MyComponent = () => {
-  
-  const options = ['option3', 'option2', 'option3', 'option4'];
 
-  
-  const [selectedOption, setSelectedOption] = useState(options[0]);
-
-  const handleSelectChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
-
-  return (
-    <div>
-      <h2>Select Option:</h2>
-      <select value={selectedOption} onChange={handleSelectChange}>
-        
-        {options.map((option) => (
-          <option key={option} value={option}>
-            {option}
-          </option>
-        ))}
-      </select>
-    </div>
-  );
-};
 
 
 
